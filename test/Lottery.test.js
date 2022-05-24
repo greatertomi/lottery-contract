@@ -81,6 +81,7 @@ describe('Lottery Contract', () => {
     }
   });
 
+  // end-to-end test for user
   it('sends money to the winner and resets the players array', async () => {
     await lottery.methods.enter().send({
       from: accounts[0],
